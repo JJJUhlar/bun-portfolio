@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="prefetch" href="ascii.js" />
+
+    <title>Joseph Uhlar</title>
+    <style>
+      :root {
+        --bg-colour: rgb(32, 32, 68);
+        --accent-color: rgb(235, 224, 106);
+        --highlight-color: rgb(189, 73, 112);
+        --max-width: 800px
+      }
+      body {
+        background-color: var(--bg-colour);
+        color: white;
+        font-family: monospace;
+        white-space: pre;
+        font-size: 18px; 
+        line-height: 1;
+        display: flex;
+        justify-content: center;
+        text-underline-offset: 5px;
+      }
+      #ascii-container {
+        position: fixed;
+        top: 0;
+        max-width: var(--max-width);
+        height: 100%;
+        overflow: hidden;
+        margin: auto;
+      }
+
+      .menu {
+        text-wrap: wrap;
+        white-space: normal;
+      }
+
+      main {
+        z-index: 1;
+        padding: 0px;
+        margin: auto;
+        max-width: var(--max-width);
+        font-family: 'Courier New', Courier, monospace;
+        align-items: flex-start;
+        
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      p,
+      a {
+        padding: 0.5rem;
+        margin: 1rem;
+        line-height: 1.5;
+        background-color: var(--bg-colour);
+      }
+
+      a {
+        color: palegoldenrod;
+        &:hover {
+          color: palevioletred;
+        }
+      }
+
+      .list {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="ascii-container"></div>
+    </div>
+    <main >
+      <div class="menu">
+        <hgroup >
+          <h1 style="display: inline; white-space: pre;">Hello :)</h1>
+          <p>
+            I'm Joseph, and I make software at<a href="www.flow-motion.io">flowmotion</a>
+          </p>
+        </hgroup>
+        <section class="list">
+          <a href="https://github.com/JJJUhlar">Github</a>
+          <a href="https://www.linkedin.com/in/joseph-uhlar-72752017a/">LinkedIn</a>
+          <a href="">Email</a>
+          <a href="https://calendly.com/josephuhlar/quick-chat">Chat</a>
+        </section>
+      </div>
+    </main>
+    <script type="module" src="ascii"  ></script>
+  </body>
+</html>
